@@ -9,7 +9,9 @@ const Notes = () => {
 
    useEffect(() => {
       const notesData = JSON.parse(localStorage.getItem('notes'))
+      if(notesData){
       setNotes(notesData)
+      }
    }, [])
    const addNote = (newNote) => {
       setNotes([newNote, ...notes])
