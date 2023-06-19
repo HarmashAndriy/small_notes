@@ -1,0 +1,10 @@
+.nav i{
+   font-size: 50px;
+   color: var(--text-color);
+}
+.nav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 200px;
+}

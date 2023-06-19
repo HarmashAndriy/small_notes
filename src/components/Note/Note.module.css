@@ -1,0 +1,19 @@
+.note{
+   display: flex;
+   flex-direction: column;
+   background-color: var(--note-background-color);
+   color: var(--text-color);
+   height: 100%;
+   border-radius: 15px;
+   padding: 15px;
+   box-sizing: border-box;
+   hyphens: auto;
+   text-align: justify;
+   text-overflow: ellipsis;
+   cursor: pointer;
+   transition: 0.3s all;
+   overflow: hidden;
+}
+.note:hover{
+   background-color: var(--hover-color);
+}

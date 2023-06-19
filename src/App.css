@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700;900&display=swap');
+
+:root[data-theme="light"] {
+  --hover-color: #00000007;
+  --note-background-color: #00000010;
+  --background-color: #f6f6f6;
+  --text-color: #1C1E21;
+  --input-color: #ececec;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root[data-theme="dark"] {
+  --hover-color: #262a2f;
+  --note-background-color: #2a2e34;
+  --background-color: #191c21; 
+  --text-color: #e5e5e4;
+  --input-color: #2a2e34;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+  font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px 15px 15px;
 }
